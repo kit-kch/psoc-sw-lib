@@ -13,8 +13,8 @@ extern "C" {
 #define PSOC_BTN_U   GPIO11
 #define PSOC_BTN_D   GPIO12
 #define PSOC_BTN_R   GPIO13
-#define PSOC_BTN_C   GPIO14
-#define PSOC_BTN_SW1 GPIO15
+#define PSOC_BTN_C   GPIO17
+#define PSOC_BTN_SW1 GPIO18
 
 #define PSOC_LED2    GPIO20
 #define PSOC_LED3    GPIO21

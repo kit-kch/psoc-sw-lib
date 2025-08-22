@@ -70,7 +70,7 @@ bool psoc_board_setup(bool force)
 
     // Not using SPI and PWM, use those as GPIOs
     neorv32_uart0_printf("=> Setting up IO multiplexer\n");
-    IOMUX_REG_FUNC = (FUNC_I2S | FUNC_DAC | FUNC_I2C | FUNC_UART0 | FUNC_SD);
+    IOMUX_REG_FUNC = (FUNC_I2S | FUNC_DAC | FUNC_I2C | FUNC_UART0 | FUNC_SD_D1);
 
     neorv32_uart0_printf("=> Setting up GPIOs\n");
     IOMUX_REG_DIR = ((DIR_OUTPUT << PSOC_LED2) | (DIR_OUTPUT << PSOC_LED3));

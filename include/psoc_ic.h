@@ -92,15 +92,16 @@ extern "C" {
 #define PIN_SPI_MOSI  PAD11
 #define PIN_SPI_MISO  PAD12
 #define PIN_SPI_CS0   PAD13
-#define PIN_SPI_CS1   PAD14
-#define PIN_SPI_CS2   PAD15
-#define FUNC_SPI      ((1 << PIN_SPI_SCK) | (1 << PIN_SPI_MOSI) | (1 << PIN_SPI_MISO) | (1 << PIN_SPI_CS0) | (1 << PIN_SPI_CS1) | (1 << PIN_SPI_CS2))
+#define FUNC_SPI      ((1 << PIN_SPI_SCK) | (1 << PIN_SPI_MOSI) | (1 << PIN_SPI_MISO) | (1 << PIN_SPI_CS0))
 
-#define PIN_SD_CLK    PAD16
-#define PIN_SD_CMD    PAD17
-#define PIN_SD_DAT    PAD18
-#define PIN_SD_CD     PAD19
-#define FUNC_SD       ((1 << PIN_SD_CLK) | (1 << PIN_SD_CMD) | (1 << PIN_SD_DAT) | (1 << PIN_SD_CD))
+#define PIN_SD_CLK    PAD14
+#define PIN_SD_CMD    PAD15
+#define PIN_SD_DAT0   PAD16
+#define PIN_SD_DAT1   PAD17
+#define PIN_SD_DAT2   PAD18
+#define PIN_SD_DAT3   PAD19
+#define FUNC_SD_D1    ((1 << PIN_SD_CLK) | (1 << PIN_SD_CMD) | (1 << PIN_SD_DAT0) | (1 << PIN_SD_DAT3))
+#define FUNC_SD_D4    ((1 << PIN_SD_CLK) | (1 << PIN_SD_CMD) | (1 << PIN_SD_DAT0) | (1 << PIN_SD_DAT1) | (1 << PIN_SD_DAT2) | (1 << PIN_SD_DAT3))
 
 #define PIN_PWM_0     PAD20
 #define PIN_PWM_1     PAD21
